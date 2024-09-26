@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RHTMDAAJ - Friendship Group</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #2980B9;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2C3E50;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #1ABC9C;
+    }
+
+    /* Main Section */
+    .hero {
+      background-color: #ffeb3b;
+      padding: 100px 20px;
+      text-align: center;
+      color: #2C3E50;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 15px 30px;
+      background-color: #1ABC9C;
+      color: white;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #16A085;
+    }
+
+    /* About Section */
+    .about {
+      padding: 50px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2.5em;
+      color: #2980B9;
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      font-size: 1.2em;
+      color: #34495E;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Member Section */
+    .members {
+      padding: 50px 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .members h2 {
+      font-size: 2.5em;
+      color: #2980B9;
+      margin-bottom: 30px;
+    }
+
+    .member-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .member-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .member-item:hover {
+      transform: scale(1.05);
+    }
+
+    .member-item h3 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #1ABC9C;
+    }
+
+    .member-item p {
+      font-size: 1.1em;
+      color: #7F8C8D;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 50px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2.5em;
+      color: #2980B9;
+      margin-bottom: 30px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #BDC3C7;
+      border-radius: 5px;
+      font-size: 1.1em;
+    }
+
+    .contact-form button {
+      background-color: #1ABC9C;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #16A085;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2C3E50;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1em;
+    }
+
+    footer a {
+      color: #1ABC9C;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>RHTMDAAJ Friendship Group</h1>
+    <p>The most fun and energetic group of Class 9 from SMP Sanmarino!</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#members">Members</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to the RHTMDAAJ Squad!</h2>
+    <p>We are the coolest group in Class 9, SMP Sanmarino, full of fun and mischief!</p>
+    <button onclick="window.location.href='join.html'">Join the Fun!</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About RHTMDAAJ</h2>
+    <p>
+      RHTMDAAJ is a friendship group formed by the 9th-grade students of SMP Sanmarino. 
+      We are all about having fun, supporting each other, and making the most out of our school years. 
+      Whether it's studying together or getting into funny mischief, we always have each other's backs. 
+      Join us as we navigate through the craziness of being a middle school student!
+    </p>
+  </section>
+
+  <!-- Members Section -->
+  <section id="members" class="members">
+    <h2>Meet the Members</h2>
+    <div class="member-list">
+      <div class="member-item">
+        <h3>ZANDER</h3>
+        <p>The leader of the group, always full of new ideas for fun!</p>
+      </div>
+      <div class="member-item">
+        <h3>YANTO</h3>
+        <p>She's the brain of the group, acing exams but also enjoying life.</p>
+      </div>
+      <div class="member-item">
+        <h3>WILLIAM</h3>
+        <p>The joker, always ready with a joke or a funny prank.</p>
+      </div>
+      <div class="member-item">
+        <h3>JUAN</h3>
+        <p>The most caring one, ensuring everyone in the group is okay.</p>
+      </div>
+      <div class="member-item">
+        <h3>JOGI</h3>
+        <p>He loves sports and is always motivating us to stay active.</p>
+      </div>
+      <div class="member-item">
+        <h3>LAMHOT</h3>
+        <p>The creative genius, always bringing arts and crafts to the group.</p>
+        <div class="member-item">
+            <h3>NATAN</h3>
+            <p>The most caring one, ensuring everyone in the group is okay.</p>
+            <div class="member-item">
+                <h3>IVAN</h3>
+                <p>The most caring one, ensuring everyone in the group is okay.</p>
+            </div>
+            <div class="member-item">
+                <h3>AYUB</h3>
+                <p>The most caring one, ensuring everyone in the group is okay.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch with RHTMDAAJ</h2>
+    <form class="contact-form" action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 RHTMDAAJ Friendship Group. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>
